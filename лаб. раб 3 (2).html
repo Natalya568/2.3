@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.5.1.js">
+</script>
+
+<script>
+
+$(document).ready(function(){
+    $("#btn1").click(function(){
+            $("#txt").slideUp(
+                5000,
+                function(){
+            alert("Текст скрыт");
+            }
+            );
+    });
+});
+
+</script>
+</head>
+
+<body>
+
+    <input type="button" id="btn1" value="Скрыть текст"/>
+    <div id="txt">
+       
+        Я сразу смазал карту будня,<br>
+плеснувши краску из стакана;<br>
+я показал на блюде студня<br>
+косые скулы океана.<br>
+На чешуе жестяной рыбы<br>
+прочел я зовы новых губ.<br>
+А вы<br>
+ноктюрн сыграть<br>
+могли бы<br>
+на флейте водосточных труб?<br>
+<br>
+<strong><i>В.В. Маяковский</i></strong>
+    </div>
+</body>
+</html>
